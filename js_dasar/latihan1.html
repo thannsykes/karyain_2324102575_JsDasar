@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 | Afthan</title>
+</head>
+<body>
+    <script>
+        function Person(firstName, lastName) {
+            this.sayHello = function (name) {
+                console.info(`Hello ${name}, my name is ${this.firstName}`);
+            }
+        }
+
+        const eko = new Person();
+        eko.firstName = "Eko";
+        eko.lastName = "Khannedy";
+        eko.sayHello("Joko");
+
+        const budi = new Person();
+        budi.firstName = "Budi";
+        budi.lastName = "Nugroho";
+        budi.sayHello("Joko");
+
+        console.log(eko);
+        console.log(budi);
+    </script>
+</body>
+</html>
